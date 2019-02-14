@@ -6,9 +6,23 @@
     <script src="js/main.js"></script>
     <link href="css/default.css" rel="stylesheet" />
 
+    <script>
+        function addnumber(countupto) {
+
+
+            sum = 0;
+            for (i = 0; i < countupto; i++) {
+                sum += i;
+            }
+            return (sum);
+        }
+    </script>
 </head>
-<body onload="myfunction()">
-    <div>Content goes here!</div>
-    
+<body>
+    <script>
+        var input = prompt("Input your number");
+        document.write(addnumber(input));
+    </script>
+
 </body>
 </html>
